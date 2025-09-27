@@ -1,63 +1,66 @@
-📊 Project Akhir Modul 2 – SaaS Sales Analysis
+📊 Final Project Module 2 – SaaS Sales Analysis
 
 📌 Project Overview
 
-Proyek ini merupakan bagian dari Capstone Project Modul 2 (Data Analysis).
-Tujuannya adalah menganalisis dataset penjualan dari sebuah perusahaan SaaS untuk mengidentifikasi faktor pendorong profit dan kerugian, serta memberikan rekomendasi yang dapat ditindaklanjuti untuk meningkatkan profitabilitas.
+This project is part of the Capstone Project for Module 2 (Data Analysis).
+The goal is to analyze a SaaS company’s sales dataset to identify drivers of profit and loss, as well as provide actionable recommendations to improve profitability.
 
-Sebagai seorang data analyst, saya memposisikan diri seolah bekerja di sebuah perusahaan nyata, di mana insight dari analisis dipresentasikan kepada stakeholder untuk mendukung pengambilan keputusan bisnis.
+As a data analyst, I positioned myself as if working in a real company, where insights from the analysis are presented to stakeholders to support business decision-making.
 
 🎯 Business Problem
-Meskipun penjualan terlihat tinggi, perusahaan mengalami kerugian pada beberapa pelanggan dan produk.
-Pertanyaan bisnis utama:
+Although sales figures appear high, the company suffers losses with certain customers and products.
+Key business question:
 
-Bagaimana cara meningkatkan tingkat profit pada produk berdasarkan Sales, Segment customer, dan Industri perusahaan?
+How can we improve product profitability based on Sales, Customer Segment, and Industry?
 
 🗂 Dataset
-Saas-Sales
-Jumlah data: 9994 baris, 19 kolom.
-Kolom utama:
+SaaS-Sales
+
+- Rows: 9,994
+- Columns: 19
+
+Main columns:
 - Sales, Profit, Discount
 - Region, Country, City
 - Industry, Segment
 - Product, Customer, Order Date
 
 🔧 Data Cleaning
-- Pengecekan missing values → tidak ditemukan.
-- Pengecekan data duplicate → tidak ditemukan.
-- Format tanggal diubah ke tipe datetime.
-- Identifikasi outlier pada Profit/Discount:
-  Outlier merupakan pelanggan nyata dengan kerugian/profit ekstrem, bukan error.
-  Sehingga tetap dipertahankan bukan dihapus (karena penting untuk insight bisnis).
+- Checked for missing values → none found.
+- Checked for duplicates → none found.
+- Converted date format to datetime type.
+- Identified outliers in Profit/Discount:
+  Outliers represent real customers with extreme losses/profits, not errors.
+  Therefore, they were retained for business insight instead of being removed.
 
 📈 Analysis
-Statistik Deskriptif
 
-- KPI keseluruhan: Total Sales, Total Profit, Margin Profit, Rata-rata Discount.
-- Breakdown profit berdasarkan Product, Region, Segment, Industry, Customer.
-- Top 10 customer/product dengan profit negatif.
-- Distribusi diskon dan dampaknya terhadap profit margin.
+Descriptive Statistics
 
-Statistik Inferensial
+- Overall KPIs: Total Sales, Total Profit, Profit Margin, Average Discount.
+- Profit breakdown by Product, Region, Segment, Industry, Customer.
+- Top 10 customers/products with negative profit.
+- Discount distribution and its impact on profit margin.
 
-- Korelasi antara Discount % dan Profit Margin.
-  Hasil: Semakin tinggi diskon, semakin rendah margin profit secara signifikan.
+Inferential Statistics
+-Correlation between Discount % and Profit Margin.
+ Result: The higher the discount, the lower the profit margin, significantly.
 
-💡 Insight
+💡 Insights
 
-- Product: Big Ol Database dan ContactMatcher sering menyebabkan kerugian.
-- Region: Jepang & Swedia sering menjadi pasar yang merugi.
-- Segment: SMB (Small & Medium Business) lebih berisiko dan profit margin lebih rendah.
-- Discount: Diskon di atas 15% → profit margin berubah menjadi negatif.
-- Customer: Beberapa pelanggan dengan penjualan tinggi tetap tidak menguntungkan karena diskon terlalu besar dan produk berbiaya tinggi.
+- Products: Big Ol Database and ContactMatcher often lead to losses.
+- Regions: Japan & Sweden are consistently unprofitable markets.
+- Segments: SMBs (Small & Medium Businesses) are riskier with lower profit margins.
+- Discounts: Discounts above 15% → profit margins turn negative.
+- Customers: Some high-sales customers remain unprofitable due to excessive discounts and high-cost products.
 
-✅ Recommendation
+✅ Recommendations
 
-- Batasi diskon SMB maksimal ≤15%.
-- Repricing produk yang membuat loss.
-- Terapkan penyesuaian harga regional di APJ & Swedia.
-- Negosiasi ulang kontrak dengan 20 pelanggan terburuk.
-- Pantau margin dalam proses penjualan.
+- Cap SMB discounts at ≤15%.
+- Reprice products that consistently generate losses.
+- Apply regional pricing adjustments in APJ & Sweden.
+- Renegotiate contracts with the 20 worst-performing customers.
+- Monitor profit margins closely during the sales process.
 
 Tableau Public Link :
 https://public.tableau.com/app/profile/fawwaz.firjatullah/viz/capstone_17557684845910/Dash_Overview?publish=yes
