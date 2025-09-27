@@ -58,4 +58,7 @@ Statistik Inferensial
 - Terapkan penyesuaian harga regional di APJ & Swedia.
 - Negosiasi ulang kontrak dengan 20 pelanggan terburuk.
 - Pantau margin dalam proses penjualan.
+
+Tableau Public Link :
+https://public.tableau.com/app/profile/fawwaz.firjatullah/viz/capstone_17557684845910/Dash_Overview?publish=yes
   
