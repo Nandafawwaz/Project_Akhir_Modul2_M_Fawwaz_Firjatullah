@@ -1,19 +1,19 @@
-📊 Final Project Module 2 – SaaS Sales Analysis
+Final Project Module 2 – SaaS Sales Analysis
 
-📌 Project Overview
+Project Overview
 
 This project is part of the Capstone Project for Module 2 (Data Analysis).
 The goal is to analyze a SaaS company’s sales dataset to identify drivers of profit and loss, as well as provide actionable recommendations to improve profitability.
 
 As a data analyst, I positioned myself as if working in a real company, where insights from the analysis are presented to stakeholders to support business decision-making.
 
-🎯 Business Problem
+Business Problem
 Although sales figures appear high, the company suffers losses with certain customers and products.
 Key business question:
 
 How can we improve product profitability based on Sales, Customer Segment, and Industry?
 
-🗂 Dataset
+Dataset
 SaaS-Sales
 
 - Rows: 9,994
@@ -25,7 +25,7 @@ Main columns:
 - Industry, Segment
 - Product, Customer, Order Date
 
-🔧 Data Cleaning
+Data Cleaning
 - Checked for missing values → none found.
 - Checked for duplicates → none found.
 - Converted date format to datetime type.
@@ -33,7 +33,7 @@ Main columns:
   Outliers represent real customers with extreme losses/profits, not errors.
   Therefore, they were retained for business insight instead of being removed.
 
-📈 Analysis
+Analysis
 
 Descriptive Statistics
 
@@ -46,7 +46,7 @@ Inferential Statistics
 -Correlation between Discount % and Profit Margin.
  Result: The higher the discount, the lower the profit margin, significantly.
 
-💡 Insights
+Insights
 
 - Products: Big Ol Database and ContactMatcher often lead to losses.
 - Regions: Japan & Sweden are consistently unprofitable markets.
@@ -54,7 +54,7 @@ Inferential Statistics
 - Discounts: Discounts above 15% → profit margins turn negative.
 - Customers: Some high-sales customers remain unprofitable due to excessive discounts and high-cost products.
 
-✅ Recommendations
+Recommendations
 
 - Cap SMB discounts at ≤15%.
 - Reprice products that consistently generate losses.
